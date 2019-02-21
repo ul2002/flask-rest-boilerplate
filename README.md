@@ -20,7 +20,9 @@
     from app.main.service.logger_service import logger
     log = logger()
     log.info('custom message')
+    log.info('custom message',1) // write a log message only to local (level=info)
     log.error('custom message ')
+    log.error('custom message ',1) // write a log message only to local (level=error)
 
 ```
 https://github.com/ul2002/flask-rest-boilerplate.git
