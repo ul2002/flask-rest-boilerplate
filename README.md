@@ -14,16 +14,12 @@
 
 
 ### Using logger ####
-    the logger serice is located in app/main/service/logger_service.py
-
+    the logger service is located at app/main/service/logger_service.py
     the example below explain how to use it
 
     from app.main.service.logger_service import logger
-
     log = logger()
-
     log.info('custom message')
-
     log.error('custom message ')
 
 ```
