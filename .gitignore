@@ -104,4 +104,4 @@ ENV/
 /migrations
 
 # log
-log/
+log/*.log
