@@ -1,10 +1,21 @@
 #### FLASK RESTFUL API BOILER-PLATE 
 
-### Terminal commands
+This is a full stack boilerplate project with flask restfull
 
-    Initial installation: make install or pip install -r requirements.txt
++ flask
++ flask-restplus
++ SQLAlchemy
++ acra logger (internal feature added)
 
-    To run application: make run or python manage.py run
+## Installation
+
+Clone the repository and run `pip install`
+
+```
+git clone https://github.com/ul2002/flask-rest-boilerplate.git
+pip install -r requirements.txt
+
+```
 
 
 ### Setting ###
@@ -28,6 +39,18 @@
     export LOGGER_PASSWORD = <value>
 
 
+## Starting the server
+
+```
+python manage.py run
+```
+
+The server will run on port 5000. 
+
+### Viewing the app ###
+
+    Open the following url on your browser to view swagger documentation
+    http://127.0.0.1:5000/
 
 ### Using logger ####
 
@@ -40,11 +63,6 @@
     log.info('custom message',1) // write a log message only to local (level=info)
     log.error('custom message ')
     log.error('custom message ',1) // write a log message only to local (level=error)
-
-### Viewing the app ###
-
-    Open the following url on your browser to view swagger documentation
-    http://127.0.0.1:5000/
 
 ```
 https://github.com/ul2002/flask-rest-boilerplate.git
