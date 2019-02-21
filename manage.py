@@ -12,7 +12,7 @@ from app.main.service.logger_service import logger
 app = create_app('dev')
 
 log = logger()
-log.error('Server started ');
+log.info('Server started ');
 
 app.register_blueprint(blueprint)
 
