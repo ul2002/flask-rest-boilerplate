@@ -5,6 +5,8 @@ import datetime
 import requests
 from app.main.config import Config as config
 from definitions import LOG_DIR
+
+
 class logger:
     
     def __init__(self):
