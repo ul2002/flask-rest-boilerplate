@@ -20,7 +20,7 @@ pip install -r requirements.txt
 
 ### Setting ###
 
-    for windows users run 
+    For windows users run 
 
     set APP_VERSION = <value>
     set APP_NAME = <value>
@@ -29,7 +29,7 @@ pip install -r requirements.txt
     set LOGGER_USER = <value>
     set LOGGER_PASSWORD = <value>
 
-    for linux or mac users run 
+    For linux or mac users run 
 
     export APP_VERSION = <value>
     export APP_NAME = <value>
@@ -54,8 +54,8 @@ The server will run on port 5000.
 
 ### Using logger ####
 
-    the logger service is located at app/main/service/logger_service.py
-    the example below explain how to use it
+    The logger service is located at app/main/service/logger_service.py .
+    The example below explain how to use it.
 
     from app.main.service.logger_service import logger
     log = logger()
