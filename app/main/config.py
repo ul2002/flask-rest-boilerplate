@@ -10,11 +10,11 @@ class Config:
     SECRET_KEY = os.getenv('SECRET_KEY', 'my_precious_secret_key')
     DEBUG = False
     APP_VERSION = os.getenv('APP_VERSION', '1.1')
-    APP_NAME = os.getenv('APP_NAME', 'pythonProject')
-    LOGGER_HOST = os.getenv('LOGGER_HOST', 'http://127.0.0.1')
-    LOGGER_PORT = os.getenv('LOGGER_HOST', '5984')
+    APP_NAME = os.getenv('APP_NAME', 'python_client')
+    LOGGER_HOST = os.getenv('LOGGER_HOST', 'https://sentinel.variancetechnologies.io')
+    LOGGER_PORT = os.getenv('LOGGER_HOST', '')
     LOGGER_USER = os.getenv('LOGGER_HOST', 'admin')
-    LOGGER_PASSWORD = os.getenv('LOGGER_HOST', 'admin')
+    LOGGER_PASSWORD = os.getenv('LOGGER_HOST', 'password')
 
 
 class DevelopmentConfig(Config):

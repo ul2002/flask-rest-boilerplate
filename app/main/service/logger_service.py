@@ -15,7 +15,10 @@ class logger:
             level=logging.INFO, 
             datefmt='%m/%d/%Y %I:%M:%S %p'
         )
-        self.baseUrl=config.LOGGER_HOST+':'+config.LOGGER_PORT
+        if config.LOGGER_PORT:
+            self.baseUrl=config.LOGGER_HOST+':'+config.LOGGER_PORT
+        else:
+            self.baseUrl=config.LOGGER_HOST
         self.name= config.LOGGER_USER
         self.password= config.LOGGER_PASSWORD
         self.appv= config.APP_VERSION
@@ -61,6 +64,11 @@ class logger:
         if not(onlylocal) :
             self.log_acra('error', message, self.token)
         self.logger.error(message)
+
+    def warning(self, message, onlylocal = 0):
+        if not(onlylocal) :
+            self.log_acra('warning', message, self.token)
+        self.logger.warning(message)
         
         
 

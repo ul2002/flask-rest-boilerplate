@@ -12,7 +12,7 @@ from app.main.service.logger_service import logger
 app = create_app('dev')
 
 log = logger()
-log.info('Server started ');
+log.error('Error in /app/main/service/user_service.py : function save_new_user does not exist ');
 
 app.register_blueprint(blueprint)
 
