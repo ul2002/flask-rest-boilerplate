@@ -1,0 +1,11 @@
+docker run \
+  -u root \
+  --rm \
+  -p 8080:8080 \
+  -p 50000:50000 \
+  -v ~/jenkins:/var/jenkins_home \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  --name jenkins-blueocean \
+  jenkinsci/blueocean
+
+  dcb5096801244cebac30e3cdf248f409

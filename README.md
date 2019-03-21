@@ -9,7 +9,7 @@ This is a full stack boilerplate project with flask restfull
 
 ## Installation
 
-Clone the repository and run `pip install`
+Clone the repository and run `pip install` .
 
 ```
 git clone https://github.com/ul2002/flask-rest-boilerplate.git
