@@ -1,7 +1,7 @@
 #### FLASK RESTFUL API BOILER-PLATE 
 
 This is a full stack boilerplate project with flask restfull
-
+s
 + flask
 + flask-restplus
 + SQLAlchemy
